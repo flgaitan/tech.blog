@@ -1,0 +1,40 @@
+<article class="article">
+<h3>DASHBOARD: Published Articles</h3>
+    {{#each articles as |article| }}
+        <div class="card">
+        <div class="card-header">
+        <h3><a class="link" href="/api/edit/{{id}}">{{title}}</a></h3>
+            <p>Posted on {{moment createdAt format="dddd hh:mm A MMM DD, YYYY"}}</p>
+        </div>
+        <p class="card-body">{{content}}</p>
+        </div>
+    {{/each}}
+
+</article>
+<div class="container article-display">
+
+
+
+
+</div>
+
+<div class="container article-create bg-danger-subtle">
+    <h5>Create New Article</h5>
+
+    <form class="form article-form">    
+        <div class="form-group">
+            <label for="article-title" class="form-label">Title</label>
+            <input class="form-input w-100" type="text" id="article-title" />
+        </div>
+        <div class="form-group">
+            <label for="article-content" class="form-label">Content</label>
+            <textarea class="form-input w-100" type="text" id="article-content" rows="7"></textarea>
+        </div>
+        <div class="form-group">
+        <button class="btn btn-success" type="article" id="article">Publish</button>
+        </div>
+    </form>
+
+</div>
+
+ <script src="/javascript/dashboard.js"></script>

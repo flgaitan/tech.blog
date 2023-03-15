@@ -1,0 +1,17 @@
+[
+    {
+        "title": "What do you want to learn?",
+        "content": "I want to learn about MVC",
+        "user_id": 1
+    },
+    {
+        "title": "Why do you want to learn?",
+        "content": "I want to learn so I can be good at that subject",
+        "user_id": 2
+    },
+    {
+        "title": "Have you leaned this before?",
+        "content": "This is my first time learning this",
+        "user_id": 3
+    }
+]

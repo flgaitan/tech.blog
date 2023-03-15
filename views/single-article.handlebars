@@ -1,0 +1,31 @@
+{{>articles data}}
+
+
+<div class="comments">
+    <h5>Comment Section</h5>
+
+    {{#each data.comments as |comment|}}
+
+    {{>comments comment}}
+
+    {{/each}}
+
+
+    <h5 class="card-header"></h5>
+    <div class="container col-12 bg-success-subtle">
+        <h4>Post your comment, {{current_user}}</h4>
+
+        <form class="form comment-form">
+            <div class="form-group">
+                <input class="form-input w-100" type="text" id="username-comment" />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-danger" type="comment" id="comment">Send</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<p style="visibility: hidden" id="article-id">{{data.id}}</p>
+
+<script src="/javascript/comment.js"></script>

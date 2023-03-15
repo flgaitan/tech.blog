@@ -1,0 +1,26 @@
+    <h5>Edit Article</h5>
+   
+   <div class="container bg-secondary bg-gradient">
+
+
+    <form class="form article-form ">
+        <div class="form-group">
+            <label for="article-title" class="form-label">Title</label>
+            <input class="form-input w-100" type="text" id="article-title" value="{{data.title}}"/>
+        </div>
+        <div class="form-group">
+            <label for="article-content" class="form-label">Content</label>
+            <textarea class="form-input w-100" rows="7" type="text" id="article-content" />{{data.content}}</textarea>
+        </div>
+        <div class="form-group repost">
+        <button class="btn btn-success" type="article" id="repost">Re-Publish</button>
+        </div>
+        <div class="form-group delete">
+        <button class="btn btn-danger" type="article" id="delete">Delete</button>
+        </div>
+    </form>
+   </div>
+   
+    <p id="articleID" style="visibility:hidden;">{{data.id}}</p>
+
+     <script src="/javascript/editArticle.js"></script>
