@@ -1,0 +1,44 @@
+{
+  "name": "tech.blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flgaitan/tech.blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flgaitan/tech.blog/issues"
+  },
+  "homepage": "https://github.com/flgaitan/tech.blog#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.2.3",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.7",
+    "handlebars-helpers": "^0.10.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.2"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
+
