@@ -15,7 +15,7 @@ const seedData = async () => {
     console.log('------USER SEEDED--------');
 
 //creating for article
-const article = await Article.bulkCreate(articleDb, {
+const articles = await Article.bulkCreate(articleDb, {
     individualHooks: true,
     returning: true,
 });
@@ -23,7 +23,7 @@ const article = await Article.bulkCreate(articleDb, {
     console.log('------ARTICLE SEEDED--------');
 
 //creating for comment
-    const comment = await Comment.bulkCreate(commentDb, {
+    const comments = await Comment.bulkCreate(commentDb, {
         individualHooks: true,
         returning: true,
 });
