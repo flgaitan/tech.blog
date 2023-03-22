@@ -1,5 +1,9 @@
 # <tech.blog>
 
+AS A developer who writes about tech
+I WANT a CMS-style blog site
+SO THAT I can publish articles, blog posts, and my thoughts and opinions.
+
 ## Description
 
 - The motivation for the project was to code an application with a working schema, seeds, handlebars and working html functionality to render a tech blog page that is deployed to Heroku.
